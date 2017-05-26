@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E0E0E0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="#E0E0E0"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"
+            android:text="Nama"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="130dp"
+            android:editable="false"
+            android:entries="@array/german_familienname"
+            android:hint="ID USER"
+            android:singleLine="true"
+            android:spinnerMode="dialog">
+        </Spinner>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="190dp"
+            android:text="Status"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/usernameTIL2"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="210dp"
+            android:editable="false"
+            android:entries="@array/german_familienname"
+            android:hint="ID USER"
+            android:singleLine="true"
+            android:spinnerMode="dialog">
+        </Spinner>
+
+
+        <EditText
+            android:id="@+id/edit_text_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:hint="ID USER"
+            android:enabled="false"
+            android:textSize="15dp"
+            android:editable="false"
+            android:inputType="number"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameTIL2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="330dp"
+            android:text="Tanggal"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/edit_text_33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/usernameTIL2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/usernameTIL2"
+            android:layout_below="@+id/usernameTIL2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="350dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edit_text_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="260dp"
+            android:hint="Jumlah Barang Masuk"
+            android:textSize="15dp"
+            android:maxLength="4"
+            android:inputType="number"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="#F44336"
+            android:text="Simpan"
+            android:layout_below="@id/edit_text_33"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
