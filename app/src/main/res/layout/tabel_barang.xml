@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/id_linear"
+    android:layout_width="368dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id = "@+id/relativeLayout1"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
+        android:background = "#B2DFDB"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:id="@+id/stock_id"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "0.25"
+            android:gravity = "center"
+            android:padding = "1dp"
+            android:text = "@string/ID"
+            android:layout_marginTop="10dp"
+            android:textColor = "#424242" />
+
+        <TextView
+            android:id="@+id/stock_nama"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "0.70"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "@string/NAMA"
+            android:textColor = "#424242"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight = "0.70"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/stock_stock"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:maxLines="2"
+                android:gravity = "center"
+                android:padding = "5dp"
+                android:text = "BARANG"
+                android:textColor = "#424242" />
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:maxLines="2"
+                android:gravity = "center"
+                android:layout_marginLeft="4dp"
+                android:padding = "5dp"
+                android:text = "MASUK"
+                android:textColor = "#424242" />
+        </LinearLayout>
+             <TextView
+                android:id="@+id/stock_tanggal"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "2"
+                android:gravity = "center"
+                android:padding = "5dp"
+                android:text = "@string/TANGGAL"
+                android:textColor = "#424242"
+                android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp" />
+</LinearLayout>

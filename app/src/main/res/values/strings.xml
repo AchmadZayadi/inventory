@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TOKO BANG IPUL </string>
+    <string-array name="barang_keluar">
+        <item>out</item>
+
+    </string-array>
+
+    <string-array name="barang_baru">
+        <item>in</item>
+    </string-array>
+    <string name="ID">ID</string>
+    <string name="NAMA">NAMA</string>
+    <string name="STOCK">STOCK</string>
+    <string name="TANGGAL">TANGGAL</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_Keluar">Logout</string>
+    <string name="Pilih_Barang">Pilih Barang </string>
+    <string name="facebook_app_id">461861150872834</string>
+</resources>
+
+
